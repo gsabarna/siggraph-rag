@@ -252,7 +252,7 @@ IMPORTANT: You have been provided with {len(results)} paper excerpts. Make sure 
         }
         
         payload = {
-            "model": f"openai/{rag_generator.config.llm_model}",
+            "model": rag_generator.config.llm_model,
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_message}
@@ -446,7 +446,7 @@ IMPORTANT: You have been provided with {len(results)} paper excerpts. Make sure 
         }
         
         payload = {
-            "model": f"openai/{rag_generator.config.llm_model}",
+            "model": rag_generator.config.llm_model,
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_message}
